@@ -7,6 +7,7 @@
     "type": "git",
     "url": "https://github.com/ViachaslauKazakou/Black-formatter-VSCode"
   },
+  "license": "MIT",
   "engines": {
     "vscode": "^1.101.0"
   },
