@@ -2,7 +2,7 @@
   "name": "Black formatter",
   "displayName": "black-formatter",
   "description": "On-air formatting Python code",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "VKAZAKOU-TOOLS",
   "icon": "icon.png",
   "keywords": [
