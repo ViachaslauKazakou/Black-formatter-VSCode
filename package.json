@@ -1,8 +1,16 @@
 {
   "name": "black-formatter",
   "displayName": "black-formatter",
-  "description": "on-air formatter python code",
-  "version": "0.0.1",
+  "description": "On-air formatting Python code",
+  "version": "0.0.2",
+  "publisher": "VKAZAKOU-TOOLS",
+  "icon": "icon.png",
+  "keywords": [
+    "formatter",
+    "black",
+    "python",
+    "vscode"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/ViachaslauKazakou/Black-formatter-VSCode"

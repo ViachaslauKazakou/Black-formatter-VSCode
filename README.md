@@ -18,25 +18,31 @@ Install from `.vsix` (if local build):
 ```bash
 code --install-extension black-formatter-0.0.1.vsix
 ## Requirements
+```
 
 Make sure you have black installed:
 
 ```bash
 pip install black
+```
 
 ## Extension Settings
 
 In your VSCode settings.json:
 
+```json
 {
   "editor.formatOnSave": true
 }
 
+```
 ## Configuration
 
+```
 {
   "blackFormatter.path": "black"
 }
+```
 
 Set the path to your black executable, e.g.:
 
