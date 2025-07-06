@@ -1,0 +1,67 @@
+{
+  "name": "black-formatter",
+  "displayName": "black-formatter",
+  "description": "on-air formatter python code",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ViachaslauKazakou/Black-formatter-VSCode"
+  },
+  "engines": {
+    "vscode": "^1.101.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "python",
+        "extensions": [".py"],
+        "aliases": ["Python"]
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Black Formatter",
+      "properties": {
+        "blackFormatter.path": {
+          "type": "string",
+          "default": "black",
+          "description": "Path to the black executable"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "blackFormatter.format",
+        "title": "Format with Black"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.101.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "eslint": "^9.25.1",
+    "typescript": "^5.8.3",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2"
+  },
+
+  "activationEvents": [
+    "onLanguage:python"
+  ]
+
+}
