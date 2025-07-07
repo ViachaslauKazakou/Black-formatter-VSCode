@@ -131,4 +131,7 @@ npm version patch  # или minor / major
 vsce package
 
 # 3. Установи в VSCode
+```
 code --install-extension *.vsix --force
+code --install-extension black-formatter-by-vkazakou-tools-0.0.5.vsix --force 
+```
